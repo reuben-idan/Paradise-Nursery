@@ -1,0 +1,105 @@
+/* General page styling */
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/nursery-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background overlay for contrast */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Subtle dark overlay for readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Content container */
+.content {
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+/* Title styling */
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  color: #e3f6f5;
+  text-transform: uppercase;
+}
+
+/* Description styling */
+.description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #d6e7e4;
+  text-align: justify;
+}
+
+/* Call-to-action button */
+.cta-button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 30px;
+  color: #fff;
+  background: #32cd32;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(50, 205, 50, 0.4);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #28a428;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(50, 205, 50, 0.6);
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
